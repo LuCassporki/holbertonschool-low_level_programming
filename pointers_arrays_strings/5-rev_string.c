@@ -4,8 +4,8 @@
  *
  * Return: void.
  */
- void rev_string(char *s)
- {
+void rev_string(char *s)
+{
     int len;
 	int i;
 	char tmp;
@@ -29,4 +29,4 @@
 		i++;   /* Le curseur du début avance */
 		len--; /* Le curseur de la fin recule */
 	}
- }
+}
