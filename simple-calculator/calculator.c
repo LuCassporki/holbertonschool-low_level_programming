@@ -35,7 +35,7 @@ int main(void)
 
 		if (choice == 0)
 		{
-			printf("Bye!\n");
+			printf("Over!\n");
 		}
 		else if (choice >= 1 && choice <= 4)
 		{
@@ -44,7 +44,7 @@ int main(void)
 		}
 		else
 		{
-			printf("Invalid choice. Please try again.\n");
+			printf("Invalid choice. General Kenobi\n");
 		}
 	}
 
