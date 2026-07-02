@@ -14,8 +14,8 @@ char *_strchr(char *s, char c)
 	int i;
 
 	i = 0;
-	/* On boucle en incluant le traitement du \0 grâce à la condition post-incrément */
-	while (s[i] != '\0')
+	
+    while (s[i] != '\0')
 	{
 		if (s[i] == c)
 		{
