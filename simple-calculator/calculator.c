@@ -61,27 +61,21 @@ int main(void)
 			printf("Hello there!\n");
             if(choice == 1)
             {
-				printf("A: ");
-				scanf("%d", &A);
-
-				printf("B: ");
-				scanf("%d", &B);
-
+                get_operands(&A, &B);
 				result = A + B;
-
 				printf("Result: %d\n", result);
             }
             else if (choice == 2)
             {
               get_operands(&A, &B);
-
 				result = A - B;
-
 				printf("Result: %d\n", result);
             }
             else if (choice == 3)
             {
-
+                get_operands(&A, &B);
+                result = A * B;
+                printf("Result: %d\n", result);
             }
             else
             {
