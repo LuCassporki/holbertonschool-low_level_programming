@@ -14,7 +14,7 @@ char *_strstr(char *haystack, char *needle)
 	int i;
 	int j;
 
-	/* Sécurité standard : si l'aiguille est vide, on renvoie la botte de foin */
+	/* Sécurité standard : si aiguille  vide,  renvoie  botte  foin */
 	if (*needle == '\0')
 	{
 		return (haystack);
@@ -24,7 +24,7 @@ char *_strstr(char *haystack, char *needle)
 	while (haystack[i] != '\0')
 	{
 		j = 0;
-		/* Si le premier caractère concorde, on vérifie la suite en série */
+		/* Si  premier caractère concorde,  vérifie  suite  série */
 		while (haystack[i + j] == needle[j])
 		{
 			j++;
