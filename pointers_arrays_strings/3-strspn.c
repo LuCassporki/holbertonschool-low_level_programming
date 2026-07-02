@@ -28,10 +28,10 @@ unsigned int _strspn(char *s, char *accept)
 			j++;
 		}
 
-		/* Si accept[j] vaut '\0', c'est qu'on a parcouru tout accept sans trouver s[i] */
+		/* Si accept[j] vaut '\0', parcouru sans trouver s[i] */
 		if (accept[j] == '\0')
 		{
-			return (i); /* Rupture : on renvoie le nombre de caractères validés jusqu'ici */
+			return (i); /* Rupture : on renvoie nombre caractères validés */
 		}
 
 		i++;
