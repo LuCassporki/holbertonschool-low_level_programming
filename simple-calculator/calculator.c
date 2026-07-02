@@ -24,6 +24,10 @@ void display_menu(void)
 int main(void)
 {
 	int choice;
+	int A;
+	int B;
+    int result;
+
 
 	/* On force choice à -1 pour s'assurer qu'on entre dans la boucle */
 	choice = -1;
@@ -41,6 +45,34 @@ int main(void)
 		{
 			/* C'est ici qu'on mettra les calculs à l'étape suivante */
 			printf("Hello there!\n");
+            if(choice == 1)
+            {
+              /* 1. Afficher l'invite pour A et intercepter */
+				printf("A: ");
+				scanf("%d", &A);
+
+				/* 2. Afficher l'invite pour B et intercepter */
+				printf("B: ");
+				scanf("%d", &B);
+
+				/* 3. Calculer */
+				result = A + B;
+
+				/* 4. Afficher selon le contrat d'Holberton */
+				printf("Result: %d\n", result);
+            }
+            else if (choice == 2)
+            {
+
+            }
+            else if (choice == 3)
+            {
+
+            }
+            else
+            {
+
+            }
 		}
 		else
 		{
