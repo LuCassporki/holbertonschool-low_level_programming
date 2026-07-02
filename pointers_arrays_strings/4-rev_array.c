@@ -13,8 +13,6 @@ void reverse_array(int *a, int n)
 	int tmp;
 
 	i = 0;
-	/* On décrémente n immédiatement pour 
-	qu'il cible le dernier index valide (n - 1) */
 	n--;
 
 	/* Tant que l'index de gauche n'a pas croisé l'index de droite */
