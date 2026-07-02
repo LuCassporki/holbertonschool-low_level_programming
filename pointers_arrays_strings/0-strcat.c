@@ -13,14 +13,14 @@ int i;
 
 dest_len = 0;
 
-while(dest[dest_len] != '\0')
+while (dest[dest_len] != '\0')
 {
 	dest_len++;
 }
 
 i = 0;
 
-while(src[i] != '\0')
+while (src[i] != '\0')
 {
 dest[dest_len] = src[i];
 dest_len++;
