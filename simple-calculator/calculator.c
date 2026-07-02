@@ -16,7 +16,21 @@ void display_menu(void)
 	printf("Choice: ");
 }
 
-/**
+
+ /**
+ * get_operands - Prompts the user and reads two integer operands.
+ * @a: Pointer to the first operand in main.
+ * @b: Pointer to the second operand in main.
+ */
+ int get_operands(int *A , int *B)
+ {
+                printf("A: ");
+				scanf("%d", A);
+				printf("B: ");
+				scanf("%d", B);
+                return (0);
+ }
+ /**
  * main - Core loop of the interactive calculator.
  *
  * Return: Always 0 (Success).
@@ -47,23 +61,23 @@ int main(void)
 			printf("Hello there!\n");
             if(choice == 1)
             {
-              /* 1. Afficher l'invite pour A et intercepter */
 				printf("A: ");
 				scanf("%d", &A);
 
-				/* 2. Afficher l'invite pour B et intercepter */
 				printf("B: ");
 				scanf("%d", &B);
 
-				/* 3. Calculer */
 				result = A + B;
 
-				/* 4. Afficher selon le contrat d'Holberton */
 				printf("Result: %d\n", result);
             }
             else if (choice == 2)
             {
+              get_operands(&A, &B);
 
+				result = A - B;
+
+				printf("Result: %d\n", result);
             }
             else if (choice == 3)
             {
