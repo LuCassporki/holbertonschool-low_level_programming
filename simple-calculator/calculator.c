@@ -74,10 +74,6 @@ int main(void)
             printf("---------\n");
             printf("----------\n");
             printf(" \n");
-            printf("you right Master,\n");
-            printf("it's over..\n");
-            printf("for you!\n");
-            printf("----\n");
 		}
 		else if (choice >= 1 && choice <= 4)
 		{
