@@ -7,15 +7,17 @@
  */
 void display_menu(void)
 {
-	printf("************************************\n");
-	printf("************************************\n");
-	printf("Simple Calculator\n");
-	printf("1) Add\n");
-	printf("2) Subtract\n");
-	printf("3) Multiply\n");
-	printf("4) Divide\n");
-	printf("0) Quit\n");
-	printf("Choice: ");
+	printf("*********************\n");
+	printf("*********************\n");
+	printf("* Simple Calculator *\n");
+	printf("*___________________*\n");
+	printf("* 1) Add            *\n");
+	printf("* 2) Subtract       *\n");
+	printf("* 3) Multiply       *\n");
+	printf("* 4) Divide         *\n");
+	printf("* 0) Quit           *\n");
+	printf("*-------------------*\n");
+	printf("* Choice:");
 }
 
 
@@ -55,35 +57,59 @@ int main(void)
 
 		if (choice == 0)
 		{
-			printf("Over!\n");
+			printf("\n");
+			printf("\n");
+			printf("|\n");
+			printf("|\n");
+			printf("I    __\n");
+			printf(" \\  ('')   /\n");
+			printf("   -- ^  --\n");
+			printf("     |&|\n");
+			printf("     |.|\n");
+			printf("    /  |\n");
+			printf("   |   |\n");
+			printf("It's Over Anakin!\n");
+            printf("I have the Hight Ground\n");
+            printf("------\n");
+            printf("---------\n");
+            printf("----------\n");
+            printf(" \n");
+            printf("you right Master,\n");
+            printf("it's over..\n");
+            printf("for you!\n");
+            printf("----\n");
 		}
 		else if (choice >= 1 && choice <= 4)
 		{
 			/* C'est ici qu'on mettra les calculs à l'étape suivante */
-			printf("Hello there!\n");
+			printf("/------------------------\\\n");
+			printf("| You are the chosen One |\n");
+			printf("\\------------------------/\n");
             if(choice == 1)
             {
                 get_operands(&A, &B);
 				result = A + B;
-				printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
-                printf("Result: %d\n", result);
-                printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
+                printf("______________\n");
+                printf("--------------\n");
+                printf("| Result: %d |\n", result);
+                printf("______________\n");
+                printf("--------------\n");
             }
             else if (choice == 2)
             {
               get_operands(&A, &B);
 				result = A - B;
-				printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
-                printf("Result: %d\n", result);
-                printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
+                printf("--------------\n");
+                printf("| Result: %d |\n", result);
+                printf("--------------\n");
             }
             else if (choice == 3)
             {
                 get_operands(&A, &B);
                 result = A * B;
-                printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
-                printf("Result: %d\n", result);
-                printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
+                printf("--------------\n");
+                printf("| Result: %d |\n", result);
+                printf("--------------\n");
             }
             else
             {
@@ -93,15 +119,15 @@ int main(void)
                     printf("---------------------------\n");
                     printf("Error: division by zero\n");
                     printf("---------------------------\n");
-                    printf("999999999999999999999\n");
+                    printf("99999999999\n");
                     printf("execute order 66!\n");
-                    printf("666666666666666666666\n");
+                    printf("66666666666\n");
                 }
                 else{
                     double final_res = (double)A / B;
-                    printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
-                    printf("Result: %g\n", final_res);
-                    printf("-+-+-+-+-+-+-+-+-+-+-+-+-\n");
+                    printf("--------------\n");
+                    printf("| Result: %g |\n", final_res);
+                    printf("--------------\n");
                 }
 
             }
