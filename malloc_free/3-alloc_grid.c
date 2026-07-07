@@ -9,8 +9,8 @@
  * Return: A pointer to the 2D array of integers,
  * or NULL if width/height <= 0 or on failure.
  */
- 
- int **alloc_grid(int width, int height)
+
+int **alloc_grid(int width, int height)
 {
 	int **grid;
 	int h, w, i;
