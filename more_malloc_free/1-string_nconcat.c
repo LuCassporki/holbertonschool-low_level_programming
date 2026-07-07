@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * string_nconcat - Concatenates two strings up to n bytes of the second string.
+ * string_nconcat - Concatenates two strings.
  * @s1: The first string.
  * @s2: The second string from which to copy n bytes.
  * @n: The maximum number of bytes to copy from s2.
@@ -45,7 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		concat[i] = s2[j];
 	}
-
 	concat[i] = '\0';
 	return (concat);
 }
