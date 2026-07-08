@@ -1,0 +1,19 @@
+#ifndef DOG_H
+#define DOG_H
+
+/**
+ * struct dog - Structure de base pour stocker les donnees d'un chien
+ * @name: Pointeur vers le nom du chien (char *)
+ * @age: Age du chien (float)
+ * @owner: Pointeur vers le nom du proprietaire (char *)
+ *
+ * Description: Definition d'une structure pour le module 0x0D
+ */
+struct dog
+{
+	char *name;
+	float age;
+	char *owner;
+};
+
+#endif /* DOG_H */
